@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <style>
+            .loading{
+                display: none;
+            }
+        </style>
+
+    <title>Hello, world!</title>
+</head>
+
+<body class="bg-dark">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body text-center" id="game" >
+                    <h3 class="heading mt-3 pb-3">Guessing Game</h3>
+                    <div class="alert alert-warning" role="alert">
+                        Guess A Number between <span class="min-num badge bg-primary">1</span> and
+                        <span class="max-num badge bg-primary">10</span>
+                    </div>
+
+                    <form class="form-group">
+                        <div class="input-group mb-3">
+                        
+                            <input type="number" class="form-control" aria-label="Username"
+                                aria-describedby="basic-addon1" placeholder="Type A Number" id="guess-input">
+                                
+                                <button class="btn btn-primary" type="submit" id="guess-btn">Submit</button>
+                        </div>
+                    </form>
+
+                    <!-- LOADER HERE -->
+
+                    <div class="loading text-center"> <img src="./img/f54231_d3dd84d75266417783445703b5659914_mv2.gif" alt="fffffff"> </div>
+
+                    <!-- messege -->
+
+                    <div class="message mt-3 mb-3"></div>
+
+                    <!-- Progrees bar -->
+                    <div class="progress mt-3 mt-3" style="height: 0px;">
+                        <div class="progress-bar" role="progressbar" style="width:100%;" aria-valuenow="10" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
